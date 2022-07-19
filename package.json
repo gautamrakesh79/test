@@ -1,0 +1,32 @@
+{
+  "name": "charter_final_poc",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "allure:generate": "npx allure generate ./allure-results --clean",
+    "allure:open": "npx allure open ./allure-report",
+    "allure:serve": "npx allure serve",
+    "test": "npx playwright test --project=TEST --config=playwright.config.cjs",
+    "posttest": "npm run allure:generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.23.4",
+    "allure-commandline": "^2.18.1",
+    "experimental-allure-playwright": "^0.0.3"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1173.0",
+    "axios": "^0.27.2",
+    "dateformat": "^5.0.3",
+    "event-stream": "^4.0.1",
+    "fs": "^0.0.1-security",
+    "js-yaml": "^4.1.0",
+    "package-lock.json": "^1.0.0",
+    "path": "^0.12.7"
+  }
+}
